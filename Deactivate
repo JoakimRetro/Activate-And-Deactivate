@@ -1,0 +1,38 @@
+{
+  "name": "deactivate",
+  "permissions": "NONE",
+  "restriction": "1",
+  "_id": "siUfE",
+  "actions": [
+    {
+      "server": "0",
+      "varName": "",
+      "dataName": "Active",
+      "comparison": "4",
+      "value": "3",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "2",
+      "iffalseVal": "4",
+      "name": "Check Server Data"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "It's alreday deactivated.",
+      "storage": "0",
+      "varName2": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Message"
+    },
+    {
+      "server": "0",
+      "varName": "",
+      "dataName": "Active",
+      "changeType": "0",
+      "value": "0",
+      "name": "Control Server Data"
+    }
+  ]
+}
